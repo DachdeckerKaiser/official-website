@@ -1,0 +1,76 @@
+.headerContainer {
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
+.header {
+    width: 100%;
+    max-width: 1900px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoBox {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
+.logo {
+    height: 3rem;
+}
+
+.buttonBox {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.callButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.callButton i {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 850px) {
+    .headerContainer {
+        height: 3.5rem;
+    }
+    
+    .header {
+        height: 3.5rem;
+    }
+
+    .logoBox {
+        margin-left: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .buttonBox {
+        margin-right: 1rem;
+    }
+}
