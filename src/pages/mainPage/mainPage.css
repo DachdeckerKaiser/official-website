@@ -36,6 +36,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    border-radius: 8px;
 }
 
 .heroHeadline {

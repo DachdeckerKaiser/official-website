@@ -22,7 +22,13 @@ function MainPage() {
                         </div>
                     </div>
                     <div className="heroRightSide"></div>
-                </div>  
+                </div> 
+
+                <div className="serviceSection">
+                    <div className="serviceContent">
+                        
+                    </div>
+                </div> 
             </div>
             <Footer />
         </>
