@@ -1,0 +1,46 @@
+.darumSection {
+    width: 100vw;
+    height: 55vh;
+    background-color: var(--primary);
+}
+
+.darumContent {
+    width: 100%;
+    max-width: 1900px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.darumHeadline {
+    color: var(--text-white);
+    font-size: 2.5rem;
+}
+
+.darumPoints {
+    color: var(--text-white);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+@media screen and (max-width: 800px) {
+    .darumSection {
+        height: 70vh;
+    }
+    
+    .darumHeadline {
+        font-size: 2rem;
+    }
+
+    .darumPoints {
+        width: 80%;
+    }
+}
