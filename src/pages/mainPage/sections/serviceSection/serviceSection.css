@@ -1,0 +1,192 @@
+.serviceSection {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceContent {
+    width: 100%;
+    max-width: calc(1900px - 8rem) !important;
+    height: 100%;
+}
+
+.serviceHeader {
+    width: 100%;
+    height: 4rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serviceHeadline {
+    margin-left: 2rem;
+    font-size: 3rem;
+}
+
+.inquiryButton {
+    margin-right: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: var(--text-white);
+    display: flex;
+    gap: .5rem;
+}
+
+.inquiryButton:hover {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    background-color: var(--primary-dark);
+}
+
+.serviceList{
+    width: calc(100vw - 4rem);
+    margin-left: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.serviceCard {
+    width: 30%;
+    min-width: 20rem;
+    height: 17rem;
+    background-color: var(--background-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.serviceCard:hover {
+    background-color: var(--primary);
+    transition: .3s ease-in-out;
+}
+
+.serviceCard:hover .cardTitle {
+    color: var(--text-white);
+    transition: .3s ease-in-out;
+}
+
+.serviceCard:hover .cardDescription {
+    color: var(--text-white);
+    transition: .3s ease-in-out;
+}
+
+.cardTitle {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: start;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.cardDescription {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: start;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.visionBox {
+    margin-top: 5rem;
+    width: calc(100% - 4rem);
+    height: auto;
+    padding: 3rem 0;
+    min-height: 17rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    background-color: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.visionHeadline {
+    color: var(--text-white);
+}
+
+.visionText {
+    text-align: center;
+    color: var(--text-white);
+    width: 50%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .serviceContent {
+        width: calc(100% - 4rem);
+    }
+    
+    .serviceCard {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .serviceContent {
+        width: calc(100% - 2rem);
+    }
+
+    .serviceHeader {
+        width: 100% !important;
+    }
+    
+    .serviceCard {
+        width: 100%;
+        min-width: 17rem;
+    }
+
+    .serviceList {
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+
+    .visionText {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .serviceHeader {
+        width: calc(100% - 2rem);
+    }
+    
+    .serviceHeadline {
+        margin-left: 1rem !important;
+    }
+
+    .inquiryButton {
+        margin-right: 1rem;
+
+    }
+
+    .serviceList {
+        margin-left: 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .serviceCard {
+        height: 13rem;
+    }
+
+    .cardTitle {
+        font-size: 1.4rem;
+    }
+
+    .visionBox {
+        width: 100% !important;
+    }
+}
