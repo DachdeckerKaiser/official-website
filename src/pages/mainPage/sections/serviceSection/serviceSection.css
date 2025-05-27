@@ -23,7 +23,7 @@
 }
 
 .serviceHeadline {
-    margin-left: 2rem;
+    margin-left: var(--headline-font-size);
     font-size: 3rem;
 }
 
@@ -115,6 +115,7 @@
 
 .visionHeadline {
     color: var(--text-white);
+    font-size: var(--headline-font-size);
 }
 
 .visionText {
