@@ -33,7 +33,6 @@
     margin-right: 2rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
 }
 
 .callButton {
@@ -67,10 +66,14 @@
     }
 
     .logo {
-        font-size: 1.5rem;
+        height: 2rem !important;
     }
 
     .buttonBox {
-        margin-right: 1rem;
+        margin-right: 1rem !important;
+    }
+
+    .callButton {
+        font-size: .9rem;
     }
 }

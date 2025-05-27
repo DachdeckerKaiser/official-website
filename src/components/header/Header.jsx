@@ -2,8 +2,6 @@ import "./header.css"
 import logo from "../../assets/logo_white.png";
 
 function Header() {
-
-
     return(
         <div className="headerContainer">
             <header className="header">

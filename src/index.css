@@ -8,12 +8,30 @@
 
 :root {
   --background: #F2F2F2;
+  --background-reverse: #121212;
 
   --primary: #CF0D0D;
+  --primary-dark: #b50b0b;
+  --primary-light: #ff4444;
   --accent: #333333;
+  --accent-dark: #2a2a2a;
+  --accent-light: #3b3b3b;
   --title-color: #CF0D0D;
-  --sub-title-color: #360063;
   --link-color:rgb(231, 79, 79);
+  
+  --text-color: #121212;
+  --text-white: #ffffff;
+  --text-color-reverse: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #F2F2F2;
+    --background-reverse: #121212;
+  
+    --text-color: #121212;
+    --text-color-reverse: #ffffff;
+  }
 }
 
 body {
@@ -23,4 +41,12 @@ body {
 a {
   text-decoration: none;
   color: var(--link-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Candal", sans-serif;
+}
+
+p, a {
+  font-family: "Montserrat", sans-serif;
 }
