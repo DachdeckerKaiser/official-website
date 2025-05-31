@@ -1,0 +1,63 @@
+.timelineSection {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.timelineContent {
+    width: 100%;
+    max-width: 1900px;
+    height: 100%;
+    display: flex;
+    gap: 3rem;
+}
+
+.timelineSidebar {
+    width: 30rem;
+    height: 100%;
+    background-color: bisque;
+}
+
+.timelineSliderBox {
+    width: calc(100% - 33rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timelineHeadline {
+    margin-left: 4rem;
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.timelineSwiper {
+    margin-top: 2rem;
+    width: 98%;
+    margin: auto;
+    height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff6600; /* gewünschte Farbe */
+}
+
+.slideHeadline {
+    margin-left: 3.5rem;
+    font-size: 2rem;
+    width: 80%;
+
+}
+
+.slideText {
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    font-size: 1.3rem;
+    width: 80%;
+}
