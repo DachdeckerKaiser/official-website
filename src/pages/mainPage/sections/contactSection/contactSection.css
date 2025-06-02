@@ -188,6 +188,7 @@ textarea {
 
     .bookingBox {
         height: auto !important;
+        width: 80%;
     }
 
     .bookingContent {
