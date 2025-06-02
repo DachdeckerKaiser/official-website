@@ -1,12 +1,42 @@
 import "./contactSection.css";
 import qrcode from "../../../../assets/dachdecker_qr_code.png";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 function ContactSection() {
+    const form = useRef();
+    const [statusMessage, setStatusMessage] = useState("");
+const [statusType, setStatusType] = useState("");
+
     function openBooking() {
         window.open('https://zeeg.me/ekaiser-dachdecker', '_blank');
     }
 
-    return(
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_qh58c66',
+            'template_eptwblc',
+            form.current,
+            'k_ZJBZuPY5hSDubzr'
+        )
+        .then(
+            (result) => {
+                console.log(result.text);
+                setStatusMessage("Nachricht erfolgreich gesendet!");
+                setStatusType("success");
+                form.current.reset();
+            },
+            (error) => {
+                console.log(error.text);
+                setStatusMessage("Fehler beim Senden der Nachricht.");
+                setStatusType("error");
+            }
+        );
+    };
+
+    return (
         <div className="contactSection">
             <div className="contactContent">
                 <div className="contactSectionHeader">
@@ -14,32 +44,34 @@ function ContactSection() {
                     <p className="contactText">Schnell & Einfach ein Einschätzung & Angebot einholen</p>
                 </div>
                 <div className="contactFormBox">
-                    <div className="contactForm">
+                    <form ref={form} onSubmit={sendEmail} className="contactForm">
                         <div className="inputField">
                             <label>Vollständiger Name<span className="requiredStar">*</span></label>
-                            <input type="text" name="fullName" id="fullname" placeholder="Max Mustermann" required />
+                            <input type="text" name="fullName" placeholder="Max Mustermann" required />
                         </div>
                         <div className="inputField">
                             <label>Telefon</label>
-                            <input type="text" name="phone" id="phone" placeholder="+49 123 45678" />
+                            <input type="text" name="phone" placeholder="+49 123 45678" />
                         </div>
                         <div className="inputField">
                             <label>Email<span className="requiredStar">*</span></label>
-                            <input type="text" name="email" id="email" placeholder="beispiel@email.de" required />
+                            <input type="email" name="email" placeholder="beispiel@email.de" required />
                         </div>
                         <div className="inputField">
                             <label>Nachricht<span className="requiredStar">*</span></label>
-                            <textarea className="message" name="message" id="message" placeholder="Ihre Nachricht..." required />
+                            <textarea className="message" name="message" placeholder="Ihre Nachricht..." required />
                         </div>
-                        <p className="privacyText">Mit dem senden akzeptieren Sie die <a href="/datenschutz">Datenschutzbestimmungen</a>.</p>
-                        <button type="button" className="submitButton" name="submitButton" id="submitButton">
-                            Senden
-                        </button>
-                    </div>
+                        <p className="privacyText">
+                            Mit dem Senden akzeptieren Sie die <a href="/datenschutz">Datenschutzbestimmungen</a>.
+                        </p>
+                        <button type="submit" className="submitButton">Senden</button>
+                        {statusMessage && (<p className={`statusMessage ${statusType}`}>{statusMessage}</p>)}
+                    </form>
+
                     <div className="bookingBox">
                         <div className="bookingContent">
                             <h2 className="bookingHeadline">Termin buchen</h2>
-                            <img src={qrcode} className="bookingQRCode" alt="qr code tur Terminbuchung" />
+                            <img src={qrcode} className="bookingQRCode" alt="qr code zur Terminbuchung" />
                             <button type="button" className="bookingButton" onClick={openBooking}>Direkt Hier</button>
                         </div>
                     </div>

@@ -33,7 +33,7 @@
   --section-padding: 7rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
     --background: #F2F2F2;
     --background-reverse: #121212;
@@ -41,7 +41,7 @@
     --text-color: #121212;
     --text-color-reverse: #ffffff;
   }
-}
+}*/
 
 body {
   font-family: "Nunito", sans-serif;
