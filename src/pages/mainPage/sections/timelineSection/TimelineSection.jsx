@@ -1,3 +1,4 @@
+import yearPoint from "../../../../assets/YearPoint.png";
 import "./timelineSection.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -8,7 +9,80 @@ function TimelineSection() {
     return(
         <div className="timelineSection">
             <div className="timelineContent">
-                <div className="timelineSidebar"></div>
+                <div className="timelineSidebar">
+                    <a href="#" className="listItem">
+                        <div className="itemLeft">
+                            <img className="yearPoint" src={yearPoint} alt="line and dot" />
+                        </div>
+                        <div className="itemright">
+                            <span className="year">1978</span><br/>
+                            <span className="title">Gründung von Inhaber Werner Kaiser</span>
+                        </div>
+                    </a>
+                    <a href="#" className="listItem">
+                        <div className="itemLeft">
+                            <img className="yearPoint" src={yearPoint} alt="line and dot" />
+                        </div>
+                        <div className="itemright">
+                            <span className="year">1990er–2000er</span><br/>
+                            <span className="title">Ausbildung im elterlichen Betrieb</span>
+                        </div>
+                    </a>
+                    <a href="#" className="listItem">
+                        <div className="itemLeft">
+                            <img className="yearPoint" src={yearPoint} alt="line and dot" />
+                        </div>
+                        <div className="itemright">
+                            <span className="year">2004 - 2007</span><br/>
+                            <span className="title">Erster Auslandseinsatz in der Schweiz</span>
+                        </div>
+                    </a>
+                    <a href="#" className="listItem">
+                        <div className="itemLeft">
+                            <img className="yearPoint" src={yearPoint} alt="line and dot" />
+                        </div>
+                        <div className="itemright">
+                            <span className="year">2007 - 2015</span><br/>
+                            <span className="title">Rückkehr und Familienbetrieb</span>
+                        </div>
+                    </a>
+                    <a href="#" className="listItem">
+                        <div className="itemLeft">
+                            <img className="yearPoint" src={yearPoint} alt="line and dot" />
+                        </div>
+                        <div className="itemright">
+                            <span className="year">2015 - 2022</span><br/>
+                            <span className="title">Zweiter Auslandseinsatz mit Spezialisierung</span>
+                        </div>
+                    </a>
+                    <a href="#" className="listItem">
+                        <div className="itemLeft">
+                            <img className="yearPoint" src={yearPoint} alt="line and dot" />
+                        </div>
+                        <div className="itemright">
+                            <span className="year">2018</span><br/>
+                            <span className="title">Betriebsaufgabe durch meinen Vater</span>
+                        </div>
+                    </a>
+                    <a href="#" className="listItem">
+                        <div className="itemLeft">
+                            <img className="yearPoint" src={yearPoint} alt="line and dot" />
+                        </div>
+                        <div className="itemright">
+                            <span className="year">2023</span><br/>
+                            <span className="title">Neustart mit Familientradition</span>
+                        </div>
+                    </a>
+                    <a href="#" className="listItem">
+                        <div className="itemLeft">
+                            <img className="yearPoint" src={yearPoint} alt="line and dot" />
+                        </div>
+                        <div className="itemright">
+                            <span className="year">Heute</span><br/>
+                            <span className="title">Persönlich. Familiär. Zuverlässig.</span>
+                        </div>
+                    </a>
+                </div>
                 <div className="timelineSliderBox">
                     <h1 className="timelineHeadline">Unsere Story</h1>
                     <Swiper navigation={true} modules={[Navigation]} className="timelineSwiper">
