@@ -10,7 +10,7 @@
 
 .serviceContent {
     width: 100%;
-    max-width: calc(1900px - 8rem) !important;
+    max-width: calc(1200px) !important;
     height: 100%;
 }
 
@@ -27,7 +27,6 @@
 }
 
 .inquiryButton {
-    margin-right: 2rem;
     padding: 1rem;
     border: none;
     border-radius: 8px;
@@ -45,16 +44,17 @@
 }
 
 .serviceList{
-    width: calc(100vw - 4rem);
-    margin-left: 2rem;
+    width: 100%;
+    max-width: 1200px;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 5%;
 }
 
 .serviceCard {
-    width: 30%;
+    width: 23%;
     min-width: 20rem;
     height: 17rem;
     background-color: var(--background-light);
@@ -86,6 +86,7 @@
     text-align: start;
     width: 80%;
     margin-left: 10%;
+    font-size: var(--big-text-size);
 }
 
 .cardDescription {
@@ -99,12 +100,12 @@
 
 .visionBox {
     margin-top: var(--section-padding);
-    width: calc(100% - 4rem);
+    width: 100%;
+    max-width: calc(1200px - 6rem) !important;
     height: auto;
     padding: 3rem 0;
     min-height: 17rem;
     margin-left: 2rem;
-    margin-bottom: 5rem;
     background-color: var(--primary);
     border-radius: 8px;
     display: flex;
