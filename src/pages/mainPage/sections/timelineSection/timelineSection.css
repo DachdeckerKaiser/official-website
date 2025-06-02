@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-top: var(--section-padding); 
 }
 
 .timelineContent {
@@ -76,7 +76,7 @@
 
 .timelineHeadline {
     margin-left: 4rem;
-    font-size: 3rem;
+    font-size: var(--headline-font-size);
     color: var(--primary);
 }
 
@@ -95,22 +95,22 @@
 
 .slideHeadline {
     margin: auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 80%;
-text-align: center;
+    text-align: center;
 }
 
 .slideText {
     margin-top: 2rem !important;
     margin: auto;
-    font-size: 1.3rem;
+    font-size: var(--normal-text-size);
+    line-height: 1.5rem;
     width: 80%;
     text-align: center;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    height: 1rem;
     color: var(--primary) !important;
 }
 

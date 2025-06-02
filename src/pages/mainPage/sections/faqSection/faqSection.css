@@ -19,7 +19,7 @@
 }
 
 .faqTitle {
-    font-size: 3rem;
+    font-size: var(--headline-font-size);
     color: var(--text-white);
     text-align: center;
 }

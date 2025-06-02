@@ -2,6 +2,7 @@
     width: 100vw;
     height: 55vh;
     background-color: var(--primary);
+margin-top: var(--section-padding);
 }
 
 .darumContent {
@@ -22,7 +23,7 @@
 
 .darumPoints {
     color: var(--text-white);
-    font-size: 1.2rem;
+    font-size: var(--big-text-size);
     line-height: 1.5rem;
     width: 90%;
     text-align: center;

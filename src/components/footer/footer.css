@@ -46,7 +46,7 @@
 
 .footerLink {
     color: var(--text-white);
-    font-size: 1.1rem;
+    font-size: var(--normal-text-size);
     text-decoration: none;
     margin: 0 1rem;
 }

@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: var(--section-padding);
+    margin-bottom: var(--section-padding);
 }
 
 .contactContent {
@@ -24,13 +26,12 @@
 }
 
 .contactTitle {
-    font-size: 3rem;
+    font-size: var(--headline-font-size);
     color: var(--primary);
-    margin-top: 5rem;
 }
 
 .contactText {
-    font-size: 1.2rem;
+    font-size: var(--normal-text-size);
     color: var(--text-color);
     margin-top: 1rem;
 }
@@ -64,6 +65,7 @@
 }
 
 label {
+    font-size: var(--normal-text-size);
     margin-bottom: .3rem;
 }
 
@@ -91,7 +93,7 @@ textarea {
 }
 
 .privacyText {
-    font-size: .8rem;
+    font-size: var(--small-text-size);
 }
 
 .submitButton {
@@ -100,7 +102,7 @@ textarea {
     padding: 16px 0;
     border: none;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: var(--button-text-size);
     width: 50%;
 }
 
@@ -136,7 +138,7 @@ textarea {
 .bookingHeadline {
     color: var(--text-white);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 2rem;
 }
 
@@ -150,7 +152,7 @@ textarea {
     padding: 16px 0;
     border: none;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: var(--button-text-size);
     width: 100%;
 }
 
