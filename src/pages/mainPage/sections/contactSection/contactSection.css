@@ -186,6 +186,10 @@ textarea {
         width: 80%;
     }
 
+    .submitButton {
+        width: 100%;
+    }
+
     .bookingBox {
         height: auto !important;
         width: 80%;

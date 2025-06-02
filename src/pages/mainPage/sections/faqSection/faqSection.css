@@ -21,6 +21,7 @@
 .faqTitle {
     font-size: 3rem;
     color: var(--text-white);
+    text-align: center;
 }
 
 .faqList {
