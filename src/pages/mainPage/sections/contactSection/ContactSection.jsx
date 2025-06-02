@@ -17,19 +17,19 @@ function ContactSection() {
                     <div className="contactForm">
                         <div className="inputField">
                             <label>Vollständiger Name<span className="requiredStar">*</span></label>
-                            <input type="text" name="fullName" id="fullname" required />
+                            <input type="text" name="fullName" id="fullname" placeholder="Max Mustermann" required />
                         </div>
                         <div className="inputField">
                             <label>Telefon</label>
-                            <input type="text" name="phone" id="phone" />
+                            <input type="text" name="phone" id="phone" placeholder="+49 123 45678" />
                         </div>
                         <div className="inputField">
                             <label>Email<span className="requiredStar">*</span></label>
-                            <input type="text" name="email" id="email" required />
+                            <input type="text" name="email" id="email" placeholder="beispiel@email.de" required />
                         </div>
                         <div className="inputField">
                             <label>Nachricht<span className="requiredStar">*</span></label>
-                            <textarea className="message" name="message" id="message" required />
+                            <textarea className="message" name="message" id="message" placeholder="Ihre Nachricht..." required />
                         </div>
                         <p className="privacyText">Mit dem senden akzeptieren Sie die <a href="/datenschutz">Datenschutzbestimmungen</a>.</p>
                         <button type="button" className="submitButton" name="submitButton" id="submitButton">
