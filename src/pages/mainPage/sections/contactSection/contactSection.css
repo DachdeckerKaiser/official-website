@@ -159,3 +159,44 @@ textarea {
     transition: .3s ease-in-out;
     background-color: var(--accent-dark);
 }
+
+@media screen and (max-width: 850px) {
+    .contactContent {
+        align-items: center;
+    }
+    
+    .contactFormBox {
+        margin-top: 12rem;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contactFormBox {
+        margin-top: 13rem;
+    }
+    
+    .contactForm {
+        width: 80%;
+    }
+
+    .bookingBox {
+        height: auto !important;
+    }
+
+    .bookingContent {
+        gap: 2rem !important;
+    }
+
+    .bookingQRCode { display: none;}
+
+    textarea {
+        height: 8rem;
+    }
+}
