@@ -1,7 +1,6 @@
 .visionSection {
     width: 100vw;
     height: auto;
-    min-height: 100vh !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,10 +52,6 @@
 }
 
 @media screen and (max-width: 800px) {
-    .visionSection {
-        margin-top: 3rem;
-    }
-    
     .visionContent {
         width: 85%;
     }

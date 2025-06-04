@@ -39,7 +39,6 @@
     width: 98%;
     margin: auto;
     height: auto;
-    margin-top: 3rem;
 }
 
 .timelineSlide {
@@ -60,13 +59,24 @@
     margin: auto;
     font-size: var(--normal-text-size);
     line-height: 1.5rem;
-    width: 80%;
+    width: 80% !important;
     text-align: center;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
     color: var(--primary) !important;
+}
+
+.swiper-button-next {
+  margin-right: -.6rem;
+}
+
+.swiper-button-prev {
+  margin-left: -.6rem;
 }
 
 .reglerBox {
@@ -76,7 +86,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .bigLine {
@@ -134,25 +143,46 @@
     background-color: #cecece;
 }
 
-@media screen and (max-width: 1000px) {
-    .timelineSection {
-        height: auto;
-    }
-
-    .timelineSidebar {
-        display: none;
+@media screen and (max-width: 1300px) {
+    .timelineContent {
+        width: 80% !important;
+        min-height: 10rem;
     }
 
     .timelineSliderBox {
         width: 100%;
     }
 
-    .timelineHeadline {
-        text-align: center;
-        margin-left: 0;
+    .timelineText {
+        width: 80%;
     }
 
-    .timelineSwiper {
-        margin-top: 2rem;
+    .reglerBox {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .timelineContent {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .timelineContent {
+        width: 90%;
+        gap: 0;
+    }
+
+    .timelineHeadline {
+        font-size: 2rem !important;
+    }
+
+    .reglerBox {
+        width: 80% !important;
+    }
+
+    .smallLine {
+        width: .2rem;
     }
 }

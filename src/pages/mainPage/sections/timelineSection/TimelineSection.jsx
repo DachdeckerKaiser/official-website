@@ -60,6 +60,7 @@ function TimelineSection() {
                             onSwiper={(swiper) => (swiperRef.current = swiper)}
                             navigation={true}
                             modules={[Navigation]}
+                            spaceBetween={30}
                             className="timelineSwiper"
                         >
                             {timelineEntries.map((entry, index) => (
