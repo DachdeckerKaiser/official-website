@@ -9,7 +9,7 @@ function HeroSection() {
                         Herzlich Willkommen
                     </h1>
                     <p className="heroText">
-                        Ihr Dachdecker in Markkleeberg - Dachdecker Kaiser mit über 40 Jahren Erfahrung. Wir sind Ihr regionaler Ansprechpartner für Dachdeckerarbeiten, Dachwartung und Dachsanierung in Markkleeberg und Leipzig.
+                        Ihr Dachdecker Kaiser in Markkleeberg - Handwerksfamilie in der 4. Generation. Wir sind Ihr regionaler Ansprechpartner für Dachdeckerarbeiten, Dachwartung und Dachsanierung in Markkleeberg und Leipzig.
                     </p>
                     <button className="ctaButton">
                         Termin Buchen
