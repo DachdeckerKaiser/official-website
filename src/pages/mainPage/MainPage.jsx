@@ -17,25 +17,25 @@ function MainPage() {
         <>
             <Header />
             <div className="mainContent">
-                <Animate animation="animate__bounceIn">
+                <Animate animation="animate__bounceInUp">
                     <HeroSection />
                 </Animate>
-                <Animate animation="animate__bounceIn">
+                <Animate animation="animate__bounceInLeft">
                     <ServiceSection />
                 </Animate>
-                <Animate animation="animate__bounceIn">
+                <Animate animation="animate__bounceInRight">
                     <VisionSection />
                 </Animate>
                 <Animate animation="animate__bounceIn">
                     <TimelineSection />
                 </Animate>
-                <Animate animation="animate__bounceIn">
+                <Animate animation="animate__bounceInUp">
                     <DarumSection />
                 </Animate>
-                <Animate animation="animate__bounceIn">
+                <Animate animation="animate__bounceInRight">
                     <ContactSection />
                 </Animate>
-                <Animate animation="animate__bounceIn">
+                <Animate animation="animate__bounceInUp">
                     <FAQSection />
                 </Animate>
                 
