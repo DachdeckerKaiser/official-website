@@ -206,6 +206,7 @@ textarea {
 
 @media screen and (max-width: 600px) {
     .contactFormBox {
+        margin-top: 7rem;
     }
     
     .contactForm {
