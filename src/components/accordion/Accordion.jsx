@@ -10,6 +10,7 @@ const Accordion = ({ title, children }) => {
         <span className="accordionTitle">{title}</span>
         <button
           className="accordionButton"
+          aria-label='Antwort sehen Knopf'
           onClick={() => setIsOpen(!isOpen)}
         >
           <i className={`bi ${isOpen ? 'bi-chevron-up' : 'bi-chevron-down'}`}></i>

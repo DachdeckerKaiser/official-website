@@ -95,6 +95,10 @@ textarea {
     font-size: var(--small-text-size);
 }
 
+.privacyLink {
+    color: var(--primary-dark);
+}
+
 .submitButton {
     background-color: var(--accent);
     color: var(--text-white);

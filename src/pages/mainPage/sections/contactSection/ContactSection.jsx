@@ -62,7 +62,7 @@ const [statusType, setStatusType] = useState("");
                                     <textarea className="message" name="message" placeholder="Ihre Nachricht..." required />
                                 </div>
                                 <p className="privacyText">
-                                    Mit dem Senden akzeptieren Sie die <a href="/datenschutz">Datenschutzbestimmungen</a>.
+                                    Mit dem Senden akzeptieren Sie die <a href="/datenschutz" className="privacyLink">Datenschutzbestimmungen</a>.
                                 </p>
                                 <button type="submit" className="submitButton">Senden</button>
                                 {statusMessage && (<p className={`statusMessage ${statusType}`}>{statusMessage}</p>)}

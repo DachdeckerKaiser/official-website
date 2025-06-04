@@ -143,6 +143,13 @@
     background-color: #cecece;
 }
 
+.activeLine {
+    width: .5rem;
+    height: 4rem;
+    background-color: var(--primary);
+    transition: .3s ease-in-out;
+}
+
 @media screen and (max-width: 1300px) {
     .timelineContent {
         width: 80% !important;

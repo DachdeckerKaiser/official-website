@@ -1,5 +1,5 @@
 import "./footer.css";
-import logo from "../../assets/logo_white.png";
+import logo from "../../assets/logo_white.webp";
 
 
 function Footer() {
@@ -8,7 +8,7 @@ function Footer() {
             <div className="footer">
                 <div className="footerContent">
                     <div className="col col1">
-                        <img src={logo} className="footerLogo"></img>
+                        <img src={logo} className="footerLogo" alt="Dachdecker Kaiser Logo" />
                     </div>
                     <div className="col col2">
                         <h3>Anschrift</h3>

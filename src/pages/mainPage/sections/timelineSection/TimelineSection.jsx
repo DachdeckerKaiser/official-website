@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./timelineSection.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -7,6 +7,7 @@ import { Navigation } from 'swiper/modules';
 
 function TimelineSection() {
     const swiperRef = useRef(null);
+    const [activeIndex, setActiveIndex] = useState(0);
 
     const timelineEntries = [
         {
@@ -58,6 +59,7 @@ function TimelineSection() {
                         <h1 className="timelineHeadline">Unsere Story</h1>
                         <Swiper
                             onSwiper={(swiper) => (swiperRef.current = swiper)}
+                            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
                             navigation={true}
                             modules={[Navigation]}
                             spaceBetween={30}
@@ -73,21 +75,22 @@ function TimelineSection() {
                     </div>
 
                     <div className="reglerBox">
-                        {Array.from({ length: 36 }, (_, i) => {
-                            const isBig = i % 5 === 0;
-                            const slideIndex = i / 5;
-                            const year = timelineEntries[slideIndex]?.year;
+                            {Array.from({ length: 36 }, (_, i) => {
+                                const isBig = i % 5 === 0;
+                                const slideIndex = i / 5;
+                                const year = timelineEntries[slideIndex]?.year;
+                                const isActive = isBig && slideIndex === activeIndex;
 
-                            return (
-                            <div
-                                key={i}
-                                className={isBig ? "bigLine" : "smallLine"}
-                                onClick={() => isBig && swiperRef.current?.slideTo(slideIndex)}
-                                data-tooltip={isBig ? year : null}
-                                style={{ cursor: isBig ? "pointer" : "default" }}
-                            ></div>
-                            );
-                        })}
+                                return (
+                                    <div
+                                        key={i}
+                                        className={`${isBig ? "bigLine" : "smallLine"} ${isActive ? "activeLine" : ""}`}
+                                        onClick={() => isBig && swiperRef.current?.slideTo(slideIndex)}
+                                        data-tooltip={isBig ? year : null}
+                                        style={{ cursor: isBig ? "pointer" : "default" }}
+                                    ></div>
+                                );
+                            })}
                     </div>
                 </div>
         </div>

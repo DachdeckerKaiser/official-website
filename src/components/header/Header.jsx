@@ -1,5 +1,5 @@
 import "./header.css"
-import logo from "../../assets/logo_white.png";
+import logo from "../../assets/logo_white.webp";
 
 function Header() {
     return(
@@ -7,7 +7,7 @@ function Header() {
             <header className="header">
                 <div className="logoBox">
                     <a href="/" className="logoLink">
-                        <img src={logo} className="logo" />
+                        <img src={logo} className="logo" alt="Dachdecker Kaiser Logo" />
                     </a>
                 </div>
                 <div className="buttonBox">
