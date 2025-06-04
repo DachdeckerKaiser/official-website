@@ -1,6 +1,9 @@
 import "./mainPage.css";
+
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import Animate from "../../components/animationComponent/Animate";
+
 import HeroSection from "./sections/heroSection/HeroSection";
 import ServiceSection from "./sections/serviceSection/ServiceSection";
 import VisionSection from "./sections/visionSection/VisionSection";
@@ -14,13 +17,34 @@ function MainPage() {
         <>
             <Header />
             <div className="mainContent">
-                <HeroSection />
-                <ServiceSection />
-                <VisionSection />
-                <TimelineSection />
-                <DarumSection />
-                <ContactSection />
-                <FAQSection />
+                <Animate animation="animate__bounceIn">
+                    <HeroSection />
+                </Animate>
+                <Animate animation="animate__bounceIn">
+                    <ServiceSection />
+                </Animate>
+                <Animate animation="animate__bounceIn">
+                    <VisionSection />
+                </Animate>
+                <Animate animation="animate__bounceIn">
+                    <TimelineSection />
+                </Animate>
+                <Animate animation="animate__bounceIn">
+                    <DarumSection />
+                </Animate>
+                <Animate animation="animate__bounceIn">
+                    <ContactSection />
+                </Animate>
+                <Animate animation="animate__bounceIn">
+                    <FAQSection />
+                </Animate>
+                
+                
+                
+                
+                
+                
+                
                 <Footer />
             </div>
         </>
