@@ -22,6 +22,10 @@ function Impressum() {
                         Tel: <a className="link" href="tel:+491774821477">+49 177 4821477</a><br/>
                         E-Mail: <a className="link" href="mailto:e.kaiser@dachdecker-kaiser.de">e.kaiser@dachdecker-kaiser.de</a><br/>
                     </p>
+                    <p className="tech">
+                        <strong>Technische umsetzung der Website:</strong><br/>
+                        <a href="https://www.flowefy.de" target="_blank" className="flowefyLink">flowefy. <i className="bi bi-box-arrow-up-right"></i></a>
+                    </p>
                 </div>
             </div>
             <Footer />

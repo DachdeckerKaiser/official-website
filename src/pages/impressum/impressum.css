@@ -40,6 +40,18 @@
     text-decoration: none;
 }
 
+.tech {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.flowefyLink {
+    
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    color: #8C00FF;
+}
+
 @media screen and (max-width: 850px) {
     .impressumBox {
         width: 90%;
