@@ -1,6 +1,5 @@
 import { useInView } from 'react-intersection-observer';
 import 'animate.css';
-import "./animateCustom.css";
 
 const Animate = ({ children, animation, delay = 0 }) => {
   const { ref, inView } = useInView({
