@@ -28,3 +28,8 @@
 .faqList {
     margin-top: 1rem;
 }
+
+.faqLink {
+    color: var(--text-white);
+    text-decoration: underline;
+}
