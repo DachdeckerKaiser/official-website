@@ -13,15 +13,16 @@ function Datenschutz() {
                         <h3 className="datenschutzSubTitle">Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) im Rahmen unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte auf. Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“, verweisen wir auf die Definitionen in Art. 4 der Datenschutzgrundverordnung (DSGVO).</h3>
                         <h2>Verantwortlicher</h2>
                         <p className="datenschutzDescription">
-                            Schwedenstraße 29A<br/>
-                            04420 Markranstädt<br/>
+                            Dachdesckerfachbetrieb Kaiser<br/>
+                            Städtelner Str. 28A<br/>
+                            04416 Markkleeberg<br/>
                             Deutschland<br/>
                             <br/>
                             <strong>Vertreten durch:</strong><br/>
-                            <strong>Colin Grahm (Geschäftsführer)</strong><br/>
+                            <strong>Enrico Kaiser (Geschäftsführer)</strong><br/>
                             <br/>
-                            Tel: <a className="link" href="tel:017624693418">0177-4821477</a><br/>
-                            E-Mail: <a className="link" href="mailto:colingrahmmedia@gmail.com">colingrahmmedia@gmail.com</a><br/>
+                            Tel: <a className="link" href="tel:+49 177 4821477">+49 177 4821477</a><br/>
+                            E-Mail: <a className="link" href="mailto:e.kaiser@dachdecker-kaiser.de">e.kaiser@dachdecker-kaiser.de</a><br/>
                         </p>
 
                         <h2>Arten der verarbeiteten Daten</h2>
