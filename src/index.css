@@ -8,7 +8,8 @@
 }
 
 :root {
-  --background: #F2F2F2;
+  --background: #ffa0a0;
+  /*--background: #F2F2F2;*/
   --background-light: #ffffff;
   --background-reverse: #121212;
 
@@ -32,6 +33,7 @@
   --button-text-size: 1rem;
   --section-padding: 7rem;
 }
+
 
 /*@media (prefers-color-scheme: dark) {
   :root {

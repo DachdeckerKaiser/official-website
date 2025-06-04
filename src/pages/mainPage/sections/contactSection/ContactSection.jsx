@@ -2,7 +2,6 @@ import "./contactSection.css";
 import qrcode from "../../../../assets/dachdecker_qr_code.png";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-import Animate from "../../../../components/animationComponent/Animate";
 
 function ContactSection() {
     const form = useRef();
@@ -40,13 +39,10 @@ const [statusType, setStatusType] = useState("");
     return (
         <div className="contactSection">
                 <div className="contactContent">
-                    <Animate animation="animate__bounceInUp">
                         <div className="contactSectionHeader">
                             <h1 className="contactTitle">Kontaktieren Sie uns gern!</h1>
                             <p className="contactText">Schnell & Einfach ein Einschätzung & Angebot einholen</p>
                         </div>
-                    </Animate>
-                    <Animate animation="animate__bounceInUp">
                         <div className="contactFormBox">
                             <form ref={form} onSubmit={sendEmail} className="contactForm">
                                 <div className="inputField">
@@ -72,7 +68,6 @@ const [statusType, setStatusType] = useState("");
                                 {statusMessage && (<p className={`statusMessage ${statusType}`}>{statusMessage}</p>)}
                             </form>
 
-                            <Animate animation="animate__bounceInRight">
                                 <div className="bookingBox">
                                     <div className="bookingContent">
                                         <h2 className="bookingHeadline">Termin buchen</h2>
@@ -80,9 +75,7 @@ const [statusType, setStatusType] = useState("");
                                         <button type="button" className="bookingButton" onClick={openBooking}>Direkt Hier</button>
                                     </div>
                                 </div>
-                            </Animate>
                         </div>
-                    </Animate>
             </div>
         </div>
     );

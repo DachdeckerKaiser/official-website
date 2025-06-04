@@ -1,0 +1,73 @@
+.visionSection {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--section-padding);
+}
+
+.visionContent {
+    width: 100%;
+    max-width: calc(1200px) !important;
+    height: 100%;
+}
+
+.visionBox {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    min-height: 17rem;
+    background-color: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.visionHeadline {
+    color: var(--text-white);
+    font-size: var(--headline-font-size);
+}
+
+.visionText {
+    text-align: center;
+    color: var(--text-white);
+    width: 50%;
+    font-size: var(--normal-text-size);
+    line-height: 1.7rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .visionContent {
+        width: 80%;
+        min-height: 10rem;
+    }
+
+    .visionText {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .visionSection {
+        margin-top: 3rem;
+    }
+    
+    .visionContent {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .visionContent {
+        width: 90%;
+    }
+
+    .visionHeadline {
+        font-size: 2rem !important;
+    }
+}

@@ -44,25 +44,26 @@
 }
 
 .serviceList{
-    width: 100%;
+/*    width: 100%;
     max-width: 1200px;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5%;
+    gap: 5%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
 }
 
 .serviceCard {
-    width: 23%;
-    min-width: 20rem;
-    height: 17rem;
-    background-color: var(--background-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 8px;
-    margin-bottom: 2rem;
+    max-width: calc(100% - 3rem) !important;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
 .serviceCard:hover {
@@ -85,8 +86,12 @@
     margin-bottom: 1rem;
     text-align: start;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: var(--big-text-size);
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    lang: de;
 }
 
 .cardDescription {
@@ -96,39 +101,45 @@
     width: 80%;
     margin-left: 10%;
     font-size: var(--normal-text-size);
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    lang: de;
 }
 
-.visionBox {
-    margin-top: var(--section-padding);
-    width: 100%;
-    max-width: calc(1200px - 6rem) !important;
-    height: auto;
-    padding: 3rem 0;
-    min-height: 17rem;
-    margin-left: 2rem;
-    background-color: var(--primary);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+@media screen and (max-width: 1300px) {
+    .serviceContent {
+        width: 80%;
+        min-height: 10rem;
+    }
+
+    .serviceText {
+        width: 80%;
+    }
 }
 
-.visionHeadline {
-    color: var(--text-white);
-    font-size: var(--headline-font-size);
+@media screen and (max-width: 800px) {
+    .serviceSection {
+        margin-top: 3rem;
+    }
+    
+    .serviceContent {
+        width: 85%;
+    }
 }
 
-.visionText {
-    text-align: center;
-    color: var(--text-white);
-    width: 50%;
-    font-size: var(--normal-text-size);
-    line-height: 1.7rem;
+@media screen and (max-width: 500px) {
+    .serviceContent {
+        width: 90%;
+    }
+
+    .serviceHeadline {
+        font-size: 2rem !important;
+    }
 }
 
-@media screen and (max-width: 1200px) {
+
+/**@media screen and (max-width: 1200px) {
     .serviceContent {
         width: calc(100% - 4rem);
     }
@@ -140,7 +151,8 @@
 
 @media screen and (max-width: 800px) {
     .serviceContent {
-        width: calc(100% - 2rem);
+        width: calc(100% - 3rem);
+        margin: auto;
     }
 
     .serviceHeader {
@@ -156,13 +168,13 @@
         margin-top: 5rem;
         flex-direction: column;
     }
-
-    .visionText {
-        width: 70%;
-    }
 }
 
 @media screen and (max-width: 750px) {
+    .serviceContent {
+        margin-left: 1rem;
+    }
+    
     .serviceHeader {
         width: calc(100% - 2rem);
     }
@@ -183,13 +195,15 @@
 
     .serviceCard {
         height: 13rem;
+        padding: 2rem 0;
     }
 
     .cardTitle {
         font-size: 1.4rem;
+        margin-left: -1rem !important;
     }
 
-    .visionBox {
-        width: 100% !important;
+    .cardDescription {
+        margin-left: -1rem !important;
     }
-}
+}****/

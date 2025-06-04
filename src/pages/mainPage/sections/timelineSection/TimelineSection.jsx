@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import Animate from "../../../../components/animationComponent/Animate";
 import "./timelineSection.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -54,7 +53,6 @@ function TimelineSection() {
 
     return (
         <div className="timelineSection">
-            <Animate animation="animate__bounceInUp">
                 <div className="timelineContent">   
                     <div className="timelineSliderBox">
                         <h1 className="timelineHeadline">Unsere Story</h1>
@@ -91,7 +89,6 @@ function TimelineSection() {
                         })}
                     </div>
                 </div>
-            </Animate>
         </div>
     );
 }
