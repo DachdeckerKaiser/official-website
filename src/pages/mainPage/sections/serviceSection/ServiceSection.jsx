@@ -1,12 +1,16 @@
 import "./serviceSection.css";
 
 function ServiceSection() {
+    function openInquiry() {
+        window.open('https://zeeg.me/ekaiser-dachdecker', '_blank');
+    }
+
     return(
         <div className="serviceSection">
             <div className="serviceContent">
                 <div className="serviceHeader">
                     <h1 className="serviceHeadline">Unser Service</h1>
-                    <button type="button" className="inquiryButton" id="inquiryButton">
+                    <button type="button" className="inquiryButton" id="inquiryButton" onClick={openInquiry}>
                         Anfragen
 
                         <i class="bi bi-arrow-up-right"></i>
