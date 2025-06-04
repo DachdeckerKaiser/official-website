@@ -43,14 +43,7 @@
     background-color: var(--primary-dark);
 }
 
-.serviceList{
-/*    width: 100%;
-    max-width: 1200px;
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%; */
+.serviceList {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;

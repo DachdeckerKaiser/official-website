@@ -2,6 +2,10 @@ import "./heroSection.css";
 import "animate.css";
 
 function HeroSection() {
+    function openInquiry() {
+        window.open("https://zeeg.me/ekaiser-dachdecker", "_blank");
+    }
+    
     return(
         <div className="heroSection">
             <div className="heroLeftSide">
@@ -12,7 +16,7 @@ function HeroSection() {
                     <p className="heroText">
                         Ihr Dachdecker Kaiser in Markkleeberg - Handwerksfamilie in der 4. Generation. Wir sind Ihr regionaler Ansprechpartner für Dachdeckerarbeiten, Dachwartung und Dachsanierung in Markkleeberg und Leipzig.
                     </p>
-                    <button className="ctaButton">
+                    <button className="ctaButton" onClick={openInquiry}>
                         Termin Buchen
                     </button>
                 </div>
