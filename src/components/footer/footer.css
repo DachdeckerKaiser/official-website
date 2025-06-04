@@ -99,3 +99,9 @@
         padding: 2.5rem 0;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .secondFooter {
+        height: 5rem;
+    }
+}

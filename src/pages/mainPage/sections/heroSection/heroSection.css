@@ -100,6 +100,11 @@
 
     .heroHeadline {
         font-size: 2.5rem;
+        margin-left: .5rem;
+    }
+
+    .heroText, .ctaButton {
+        margin-left: .5rem;
     }
 
     .heroRightSide {
