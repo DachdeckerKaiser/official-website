@@ -22,7 +22,7 @@
 .heroBox {
     position: sticky;
     top: calc(15vh + 1rem);
-    margin-left: 2rem;
+    margin-left: 4rem;
     width: 40rem;
     height: 70vh;
     background-color: var(--primary);
