@@ -4,6 +4,7 @@ import MainPage from './pages/mainPage/MainPage';
 import Impressum from './pages/impressum/Impressum';
 import Datenschutz from './pages/datenschutz/Datenschutz';
 import './App.css';
+import 'animate.css';
 
 function App() {
   return (

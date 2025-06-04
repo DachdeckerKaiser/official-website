@@ -35,11 +35,13 @@
 }
 
 .heroHeadline {
+    margin-left: 2rem;
     font-size: var(--headline-font-size);
     color: var(--text-white);
 }
 
 .heroText {
+    margin-left: 2rem;
     color: var(--text-white);
     font-size: var(--normal-text-size);
     width: 85%;
@@ -47,6 +49,7 @@
 }
 
 .ctaButton {
+    margin-left: 2rem;
     width: 15rem;
     padding: 1rem;
     border: none;

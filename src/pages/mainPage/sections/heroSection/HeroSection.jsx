@@ -1,10 +1,11 @@
 import "./heroSection.css";
+import "animate.css";
 
 function HeroSection() {
     return(
         <div className="heroSection">
             <div className="heroLeftSide">
-                <div className="heroBox">
+                <div className="heroBox animate__animated animate__bounceInLeft">
                     <h1 className="heroHeadline">
                         Herzlich Willkommen
                     </h1>
