@@ -25,7 +25,7 @@ function App() {
   `;
 
   console.log('%c' + ascii, 'color: #742DF8; font-family: monospace; font-size: 12px;');
-  console.log('%c' + "Willst du auch so eine? => Komm zu uns! https://flowefy.de/", 'color: #742DF8; font-size: 26px; font-family: arial;');
+  console.log('%c' + "> Willst du auch so eine? => Komm zu uns! https://flowefy.de/", 'color: #742DF8; font-size: 26px; font-family: arial;');
 
   return (
     <div className="app">
