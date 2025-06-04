@@ -17,16 +17,14 @@ function MainPage() {
         <>
             <Header />
             <div className="mainContent">
-                <Animate animation="animate__bounceInUp">
-                    <HeroSection />
-                </Animate>
+                <HeroSection />
                 <Animate animation="animate__bounceInLeft">
                     <ServiceSection />
                 </Animate>
-                <Animate animation="animate__bounceInRight">
+                <Animate animation="animate__bounceIn">
                     <VisionSection />
                 </Animate>
-                <Animate animation="animate__bounceIn">
+                <Animate animation="animate__bounceInRight">
                     <TimelineSection />
                 </Animate>
                 <Animate animation="animate__bounceInUp">
