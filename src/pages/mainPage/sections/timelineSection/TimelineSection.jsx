@@ -13,7 +13,7 @@ function TimelineSection() {
         {
             year: "1978",
             title: " – Gründung durch meinen Vater von Inhaber Werner Kaiser",
-            text: "Mit am Ende über 40 Jahren Meistererfahrung gründete mein Vater – Dachdeckermeister und Innungsmitglied – 1978 unseren ersten Familienbetrieb in Markkleeberg. Als aktives Mitglied und stellv. Vorstand der Dachdecker-Innung prägte er über Jahrzehnte das regionale Handwerk. Mehrere Mitarbeiter, langjährige Partnerschaften und ein großes Netzwerk legten das Fundament für eine erfolgreiche Unternehmensgeschichte."
+            text: "Mit am Ende über 40 Jahren Meistererfahrung gründete mein Vater – Dachdeckermeister und Innungsmitglied – 1978 unseren ersten Familienbetrieb in Markkleeberg. Als aktives Mitglied der Dachdecker-Innung prägte er über Jahrzehnte das regionale Handwerk. Mehrere Mitarbeiter, langjährige Partnerschaften und ein großes Netzwerk legten das Fundament für eine erfolgreiche Unternehmensgeschichte."
         },
         {
             year: "1990er–2000er",
