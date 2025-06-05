@@ -16,7 +16,7 @@ const [statusType, setStatusType] = useState("");
         e.preventDefault();
 
         emailjs.sendForm(
-            'service_qh58c66',
+            'service_7ilrfsj',
             'template_eptwblc',
             form.current,
             'k_ZJBZuPY5hSDubzr'

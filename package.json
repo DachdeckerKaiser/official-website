@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.15",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
