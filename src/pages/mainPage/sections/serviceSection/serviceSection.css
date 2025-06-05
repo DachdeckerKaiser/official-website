@@ -44,13 +44,15 @@
 }
 
 .serviceList {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
     padding: 1rem 0;
 }
 
 .serviceCard {
+    flex: 1 1 300px;
     max-width: calc(100% - 3rem) !important;
     background-color: #fff;
     border-radius: 12px;
@@ -81,10 +83,6 @@
     width: 80%;
     margin-left: 10%;
     font-size: var(--big-text-size);
-    hyphens: auto;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    lang: de;
 }
 
 .cardDescription {
@@ -108,7 +106,7 @@
 
     .serviceText {
         width: 80%;
-    }
+    }  
 }
 
 @media screen and (max-width: 800px) {
@@ -119,6 +117,8 @@
     .serviceContent {
         width: 85%;
     }
+
+    
 }
 
 @media screen and (max-width: 500px) {
