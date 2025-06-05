@@ -28,8 +28,7 @@ function ServiceSection() {
                         <p className='cardDescription'>
                             Wir bringen Ihr Dach auf den neuesten Stand –
                             energieeffizient, langlebig und optisch ansprechend.
-                            Von Teil- bis Komplettsanierung: alles aus
-                            Meisterhand.
+                            Von Teil- bis Komplettsanierung.
                         </p>
                     </div>
                     <div className='serviceCard'>
