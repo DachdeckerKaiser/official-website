@@ -25,7 +25,7 @@ const AccordionGroup = () => {
         <Accordion isOpen={openIndex === 0} onToggle={() => toggleAccordion(0)} title="Was bringt mir ein Balkonkraftwerk – lohnt sich das wirklich?">
             Definitiv! Mit einem Balkonkraftwerk produzieren Sie sofort eigenen Strom, senken Ihre Energiekosten und machen sich unabhängiger von steigenden Strompreisen. Die Anlagen sind kompakt, effizient und lassen sich unkompliziert installieren – auf Wunsch übernehmen wir die Montage und den Service für Sie. So machen Sie den ersten Schritt zur eigenen Energiewende direkt bei sich zuhause.
         </Accordion>
-        <Accordion isOpen={openIndex === 0} onToggle={() => toggleAccordion(0)} title="Warum Dachdecker Kaiser? Was unterscheidet Sie von anderen?">
+        <Accordion isOpen={openIndex === 0} onToggle={() => toggleAccordion(0)} title="Warum Dachdecker Kaiser? Was unterscheidet uns von anderen?">
             Wir stehen für echtes Handwerk mit Handschlagqualität – kombiniert mit modernem Denken und individuellem Service. Mit über 30 Jahren Erfahrung bieten wir zuverlässige Lösungen, die nicht nur heute funktionieren, sondern auch für morgen gedacht sind. Energieeffizienz, Zukunftstechnologien und persönliche Beratung sind für uns selbstverständlich – das macht uns zu Ihrem starken Partner rund ums Dach.
         </Accordion>
     </div>
